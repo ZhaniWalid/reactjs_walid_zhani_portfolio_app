@@ -73,7 +73,7 @@ main {
 
 .link--nav {
   color: var(--clr-fg);
-  text-transform: lowercase;
+  text-transform: uppercase; /* lowercase; */
   font-weight: 500;
 }
 
@@ -145,8 +145,10 @@ main {
   transform: translateY(-5px);
 }
 
-@media (max-width: 600px) {
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */ 
+@media screen and (max-width: 600px) {
   .section {
     margin-top: 4em;
+    width: 95%;
   }
 }

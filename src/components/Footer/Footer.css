@@ -5,12 +5,13 @@
 }
 
 .footer__link {
-  font-size: 0.9rem;
+  font-size: 1.05rem; /* 0.9rem; */
   font-weight: 600;
   color: var(--clr-fg);
 }
 
-@media (max-width: 600px) {
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
+@media screen and (max-width: 600px) {
   .footer {
     padding: 2em;
     margin-top: 3em;

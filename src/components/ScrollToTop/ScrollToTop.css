@@ -5,6 +5,7 @@
   background-color: transparent;
 }
 
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 900px' */
 @media (max-width: 900px) {
   .scroll-top {
     display: none;

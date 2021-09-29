@@ -9,7 +9,7 @@ const AdditionalInformations = () => {
   if (!additionalInformations) return null;
 
   return (
-    <section /* id='projects' */ className='section projects'>
+    <section /* id='projects' */ className='section additional-infos'>
       {/* <h2 className='section__title'>Projects</h2> */}
 
       <div className='additional-infos__grid'>

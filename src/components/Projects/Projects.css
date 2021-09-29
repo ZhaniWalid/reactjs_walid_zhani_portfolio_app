@@ -5,3 +5,11 @@
   grid-template-columns: repeat(auto-fit, minmax(18em, 1fr));
   grid-gap: 2em;
 }
+
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
+@media screen and (max-width: 600px) {
+  .projects__grid {
+    width: 100%; /* 95%; */
+    margin: 15px;
+  }
+}

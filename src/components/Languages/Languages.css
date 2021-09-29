@@ -1,0 +1,29 @@
+.languages__list {
+  max-width: 450px;
+  width: 95%;
+  margin: 0 auto;
+  display: grid; /* flex; */
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-right: 80px;
+}
+
+.languages__list-item {
+  margin: 0.5em;
+  width: 150%;
+}
+
+.languages__lang-lvl-desc {
+  color: var(--clr-primary);
+  font-size: 0.8rem;
+}
+
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
+@media screen and (max-width: 600px) {
+  .languages__list {
+    padding-right: inherit;
+  }
+  .languages__list-item {
+    width: 100%;
+  }
+}

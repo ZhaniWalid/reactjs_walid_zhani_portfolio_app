@@ -14,12 +14,13 @@ const Header = () => {
         <h3>
           {homepage ? (
             <a href={homepage} className='link' target='_blank' rel='noreferrer'>
-              {/* {title} */}              
-              <img src={myProfilePicture} 
+              {/* {title} */}
+              <img src={myProfilePicture}
+                   className='profile-image' 
                    alt='Walid Zhani' 
-                   width='150' 
-                   height='150'
-                   style={{ marginTop: '100px', /* marginLeft: '-75px', */ borderRadius: '100px' }}
+                  //  width='150' 
+                  //  height='150'
+                  //  style={{ marginTop: '100px', borderRadius: '100px' }}
               />
             </a>
           ) : (

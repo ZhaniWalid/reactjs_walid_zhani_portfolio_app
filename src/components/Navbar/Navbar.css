@@ -11,7 +11,8 @@
   display: none;
 }
 
-@media (max-width: 600px) {
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
+@media screen and (max-width: 600px) {
   .nav__list {
     display: none;
     flex-direction: column;
@@ -28,8 +29,8 @@
     margin: 0.5em 0;
   }
 
-  .nav__hamburger {
-    display: flex;
+  .app .nav__hamburger {
+    display: flow-root; /* flex */
     z-index: 2;
     margin-left: 0.8em;
   }

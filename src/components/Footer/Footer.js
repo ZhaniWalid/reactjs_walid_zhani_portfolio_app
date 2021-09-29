@@ -1,18 +1,18 @@
 /* eslint-disable prettier/prettier */
+import { about } from '../../portfolio';
 import './Footer.css';
 
 const Footer = () => (
   <footer className='footer'>
-    Copyrights © goes to 
+    Copyrights © 2021&nbsp;
     <a
-      href='https://github.com/rajshekhar26/cleanfolio'
+      href={about.social.linkedin}
       className='link footer__link'
       target='_blank'
       rel='noreferrer'
     >
-      &nbsp;Raj Shekhar  
+      &nbsp;Walid Zhani
     </a>
-    , the creature of this template
   </footer>
 );
 

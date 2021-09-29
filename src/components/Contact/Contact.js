@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import EmailIcon from '@material-ui/icons/Email';
+// import EmailIcon from '@material-ui/icons/Email';
 import { contact } from '../../portfolio';
 import './Contact.css';
 
@@ -11,7 +11,7 @@ const Contact = () => {
       <h2 className='section__title'>Contact</h2>
       <a href={`mailto:${contact.email}`}>
         <span type='button' className='btn btn--outline' style={{ textTransform: 'uppercase' }}>
-          Send Me E-mail (walid.zhani@esprit.tn)
+          Send me e-mail
         </span>      
       </a>
       {/* <EmailIcon /> */}

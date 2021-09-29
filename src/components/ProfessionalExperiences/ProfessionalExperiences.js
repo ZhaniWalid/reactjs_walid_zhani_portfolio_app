@@ -45,6 +45,11 @@ const useStyles = makeStyles((theme) =>
         width: '100px',
         '&:hover': { // = 'avatar:hover'
             transform: 'translateY(-7px)'
+        },
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            height: '50px',
+            width: '50px'
         }
     },
     listItemText: {
@@ -56,28 +61,54 @@ const useStyles = makeStyles((theme) =>
         '&:hover': {
             transform: 'translateY(-7px)'
         } */
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            marginLeft: '0px'
+        }
     },
     proExpHeader: {
         width: '750px',
         fontSize: '1.085rem',
-        color: 'var(--clr-fg-alt)'
+        fontWeight: '550',
+        color: 'var(--clr-fg-alt)',
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            width: 'auto', // '335px'
+            fontSize: '0.925rem'
+        }
     },
     proExpBody: {
         width: '1000px',
         fontSize: '0.85rem',
-        color: 'var(--clr-fg)'
+        color: 'var(--clr-fg)',
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            width: 'auto',
+            fontSize: '0.750rem'
+        }
     },
     descriptionPartOneAndTwo: {
         // Same as this inline style: style={{ color: 'var(--clr-primary)' /* 'orange' */, fontSize: '0.8rem' }}
         // but instead we call it ('descriptionPartOneAndTwo') in the 'className' prop below
-        color: 'var(--clr-primary)',  // 'orange' 
-        fontSize: '0.8rem'
+        color: 'var(--clr-primary)',
+        fontSize: '0.8rem',
+        fontStyle: 'italic',
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            fontSize: '0.7rem'
+        }
     },
     listItemSecondaryAction: {
         // Same as this inline style: style={{ top: '15%', right: '-205%' }}
         // but instead we call it ('listItemSecondaryAction') in the 'className' prop below
         top: '15%', 
-        right: '-205%'
+        right: '-205%',
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        '@media screen and (max-width: 600px)': {
+            right: '2.5%', // '0%',
+            top: '30px'
+            // marginRight: '-0.2em'
+        }
     }
   })
 );

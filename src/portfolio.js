@@ -1,11 +1,18 @@
 /* eslint-disable prettier/prettier */
-import TunisianFlag from './images/svg_icons/tunisian_flag_icon.svg';
+// import TunisianFlag from './images/svg_icons/tunisian_flag_icon.svg';
 import myEnglishVerCV from './files/PDF/My_Eng_CV_2021_ver_Aug2021_job.pdf';
 import udemyLogo from './images/logos/udemy_logo.png';
 import ibmLogo from './images/logos/ibm_logo.jpg';
 import adpLogo from './images/logos/adp_logo.png';
 import deuseSprlLogo from './images/logos/deuse_sprl_logo.png';
 import mssLogo from './images/logos/mss_logo.jpg';
+// This flag 'SVG Icons' was all Downloaded on this dimension '512*512 pixel'
+// From: https://iconarchive.com
+// Exmple Spain Flag: https://iconarchive.com/show/flags-icons-by-wikipedia/ES-Spain-Flag-icon.html
+import EnglandFlag from './images/svg_icons/england_flag_icon.svg';
+import FranceFlag from './images/svg_icons/france_flag_icon.svg';
+import GermanyFlag from './images/svg_icons/germany_flag_icon.svg';
+import SpainFlag from './images/svg_icons/spain_flag_icon.svg';
 
 const header = {
   // all the properties are optional - can be left empty or deleted
@@ -13,18 +20,22 @@ const header = {
   title: 'JS.'
 };
 
-let descPargraphe = 'I am a full-stack software developer engineer (Web/Mobile), I am 29 years old, ';
-descPargraphe += 'from Tunisia ';
-descPargraphe += TunisianFlag;
-descPargraphe += ', I have a two years and half (2.5 years) of professional experience. ';
-descPargraphe += 'I use several technologies like Java/JEE, JavaScript (ReactJS, ExtJS), ';
-descPargraphe += 'JSP, Android, Ionic, SQL, NoSql (Firebase).'; 
+let descPargraphe1 = 'I am a full-stack software developer engineer (Web/Mobile), I am 29 years old, ';
+descPargraphe1 += 'from Tunisia ';
+/*  descPargraphe += <img src={TunisianFlag} width='24px' height='24px' alt='' />; */
+let descPargraphe2 = ', I have a two years and half (2.5 years) of professional experience. ';
+descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript (ReactJS, ExtJS), ';
+descPargraphe2 += 'JSP, Android, Ionic, SQL, NoSql (Firebase).'; 
 
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Walid Zhani',
   role: 'Full Stack Engineer',
-  description: descPargraphe,
+  // description: descPargraphe,
+  description: {
+    descriptionPartOne: descPargraphe1,
+    descriptionPartTwo: descPargraphe2
+  },
   resume: myEnglishVerCV,
   social: {
     linkedin: 'https://www.linkedin.com/in/walid-zhani-54705612a/',
@@ -35,6 +46,8 @@ const about = {
 };
 
 const additionalInformations = {
+  // 'additionalInformations' can be added an removed
+  // if there are no additionalInformations, 'Additional Informations section' won't show up
   fullName: 'Walid Zhani',
   email: 'walid.zhani@esprit.tn',
   country: 'Tunisia',
@@ -49,8 +62,8 @@ const additionalInformations = {
 };
 
 const projects = [
-  // projects can be added an removed
-  // if there are no projects, Projects section won't show up
+  // 'projects' can be added an removed
+  // if there are no projects, 'Projects section' won't show up
   {
     name: 'Burger Builder',
     description:
@@ -78,8 +91,8 @@ const projects = [
 ];
 
 const skills = [
-  // skills can be added or removed
-  // if there are no skills, Skills section won't show up
+  // 'skills' can be added or removed
+  // if there are no skills, 'Skills section' won't show up
   'HTML',
   'CSS',
   'JavaScript | TypeScript',
@@ -99,10 +112,39 @@ const skills = [
   'WSDL | SOAP | REST'
 ];
 
-const contact = {
-  // email is optional - if left empty Contact section won't show up
-  email: 'walid.zhani@esprit.tn'
-};
+const languages = [
+  // 'languages' can be added an removed
+  // if there are no languages, 'Languages section' won't show up
+  {
+    langName: 'English',
+    langLvlRate: 'B2',
+    langLvlDesc: 'Upper intermediate', // Independent user
+    langFlagTxt: 'England Flag', 
+    langFlagIcon: EnglandFlag
+  },
+  {
+    langName: 'French',
+    langLvlRate: 'B2',
+    langLvlDesc: 'Upper intermediate', // Independent user
+    langFlagTxt: 'France Flag',
+    langFlagIcon: FranceFlag
+  },
+  {
+    langName: 'German',
+    langLvlRate: 'A2',
+    langLvlDesc: 'Learning in progress', // Basic user
+    langFlagTxt: 'Germany Flag',
+    langFlagIcon: GermanyFlag
+  },
+  {
+    langName: 'Spanish',
+    langLvlRate: 'A1',
+    langLvlDesc: 'Beginner', // Very basic user
+    langFlagTxt: 'Spain Flag',
+    langFlagIcon: SpainFlag
+  }
+];
+
 
 let descRoleAdp1 = 'I worked as a Full-Stack JEE Web developer, using Java (Back-End) / ExtJS + JSP (Front-End) ';
     descRoleAdp1 += 'with a team using Agile SCRUM methodology, Bitbucket for Version-Control & Jenkins for CI / CD.';
@@ -118,10 +160,10 @@ let descRoleMss2 = 'Development of an ASP.NET Web API Application (Back-End) whi
 console.log('descRoleMss:\n ', descRoleMss1+ '\n'+ descRoleMss2);
 
 const professionalExperiences = [
-  // professionalExperiences can be added or removed
-  // if there are no professionalExperiences, professionalExperiences section won't show up
+  // 'professionalExperiences' can be added or removed
+  // if there are no professionalExperiences, 'Professional Experiences' section won't show up
   {
-    period: '01/04/2019 - 31/12/2020 (DD/MM/YYYY)',
+    period: '01/04/2019 - 31/12/2020',
     companyName: 'ADP (Automatic Data Processing)',
     companyLogo: adpLogo,
     linkToLinkedInCompany: 'https://www.linkedin.com/company/adp/',
@@ -135,7 +177,7 @@ const professionalExperiences = [
     }
   },
   {
-    period: '01/10/2018 - 31/12/2018 (DD/MM/YYYY)',
+    period: '01/10/2018 - 31/12/2018',
     companyName: 'DEUSE SPRL',
     companyLogo: deuseSprlLogo,
     linkToLinkedInCompany: 'https://www.linkedin.com/company/deuse-sprl/',
@@ -149,7 +191,7 @@ const professionalExperiences = [
     }
   },
   {
-    period: '05/02/2018 - 05/08/2018 (DD/MM/YYYY)',
+    period: '05/02/2018 - 05/08/2018',
     companyName: 'MSS (Monetics Services Solutions)',
     companyLogo: mssLogo,
     linkToLinkedInCompany: 'https://www.linkedin.com/company/monetics-services-solutions/',
@@ -165,45 +207,51 @@ const professionalExperiences = [
 ];
 
 const onlineCertifications = [
-  // onlineCertifications can be added or removed
-  // if there are no onlineCertifications, onlineCertifications section won't show up
+  // 'onlineCertifications' can be added or removed
+  // if there are no onlineCertifications, 'Online Certifications' section won't show up
   {
     logoCourseProvider: udemyLogo,
     issuedBy: 'Udemy',
     nameCertif: 'React - The Complete Guide (incl Hooks, React Router, Redux)',
     linkToCertif: 'https://www.udemy.com/certificate/UC-252c97fc-c6ff-438c-b584-82718fab17d4/',
-    issuedOn: '07/12/2020 (DD/MM/YYYY)'
+    issuedOn: '07/12/2020'
   },
   {
     logoCourseProvider: udemyLogo,
     issuedBy: 'Udemy',
     nameCertif: 'Ionic React: Cross-Platform Mobile Development with Ionic 5',
     linkToCertif: 'https://www.udemy.com/certificate/UC-4a07ab41-049d-4711-b3a7-98e24216fe8b/',
-    issuedOn: '25/12/2020 (DD/MM/YYYY)'
+    issuedOn: '25/12/2020'
   },
   {
     logoCourseProvider: udemyLogo,
     issuedBy: 'Udemy',
     nameCertif: 'The Complete Oracle SQL Certification Course',
     linkToCertif: 'https://www.udemy.com/certificate/UC-0f7ea810-4819-42cd-8b5e-601033484e49/',
-    issuedOn: '23/10/2020 (DD/MM/YYYY)'
+    issuedOn: '23/10/2020'
   },
   {
     logoCourseProvider: ibmLogo,
     issuedBy: 'IBM (IBM Skills Academy)',
     nameCertif: 'Big Data Developer - Explorer Award for Students (2016)',
     linkToCertif: 'https://www.credly.com/badges/5cf0e375-eb88-44a1-ac2e-5d7ab5bf40ec/linked_in_profile',
-    issuedOn: '24/01/2018 (DD/MM/YYYY)'
+    issuedOn: '24/01/2018'
   }
 ];
 
+const contact = {
+  // 'email' is optional - if left empty Contact section won't show up
+  email: 'walid.zhani@esprit.tn'
+};
+
 export { 
-  header, 
-  about, 
-  projects, 
-  skills, 
-  contact, 
+  header,
+  about,
+  additionalInformations,
+  projects,
+  skills,
+  languages,
   professionalExperiences, 
   onlineCertifications, 
-  additionalInformations 
+  contact
 };
