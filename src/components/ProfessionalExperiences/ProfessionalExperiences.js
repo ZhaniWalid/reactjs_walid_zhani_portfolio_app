@@ -20,11 +20,20 @@ const useStyles = makeStyles((theme) =>
     root: {
         width: '100%',
         maxWidth: '36ch',
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            maxWidth: 'fit-content'  
+        },
         // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             maxWidth: 'fit-content'
+        },
+        // Exceptions For Large Mobile Screens using '768px & 1024' Portrait Mode
+        // To Configure the Components on 'Mobile Portrait View' with min-width: 768px & 'max-width: 1024px'
+        '@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)': {
+            maxWidth: 'fit-content'
         }
-        /* backgroundColor: theme.palette.background.paper */
+        // backgroundColor: theme.palette.background.paper
     },
     nested: {
         paddingLeft: theme.spacing(4)
@@ -50,7 +59,7 @@ const useStyles = makeStyles((theme) =>
         '&:hover': { // = 'avatar:hover'
             transform: 'translateY(-7px)'
         },
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             height: '50px',
             width: '50px'
@@ -70,7 +79,7 @@ const useStyles = makeStyles((theme) =>
         '&:hover': {
             transform: 'translateY(-7px)'
         } */
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             marginLeft: '0px'
         },
@@ -84,7 +93,7 @@ const useStyles = makeStyles((theme) =>
         fontSize: '1.085rem',
         fontWeight: '550',
         color: 'var(--clr-fg-alt)',
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             width: 'auto', // '335px'
             fontSize: '0.925rem'
@@ -99,7 +108,7 @@ const useStyles = makeStyles((theme) =>
         width: '1000px',
         fontSize: '0.85rem',
         color: 'var(--clr-fg)',
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             width: 'auto',
             fontSize: '0.750rem'
@@ -116,7 +125,7 @@ const useStyles = makeStyles((theme) =>
         color: 'var(--clr-primary)',
         fontSize: '0.8rem',
         fontStyle: 'italic',
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             fontSize: '0.7rem'
         },
@@ -130,7 +139,7 @@ const useStyles = makeStyles((theme) =>
         // but instead we call it ('listItemSecondaryAction') in the 'className' prop below
         top: '15%', 
         right: '-205%',
-        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
+        // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             right: '0%', // '2.5%',
             top: '30px'

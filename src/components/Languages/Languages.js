@@ -23,8 +23,7 @@ const Languages = () => {
               style={{ float: 'right' }}
             />
             <br />
-            <span className='languages__lang-lvl-desc'>{lang.langLvlDesc}</span>  
-            
+            <span className='languages__lang-lvl-desc'>{lang.langLvlDesc}</span>      
           </li>
         ))}
       </ul>

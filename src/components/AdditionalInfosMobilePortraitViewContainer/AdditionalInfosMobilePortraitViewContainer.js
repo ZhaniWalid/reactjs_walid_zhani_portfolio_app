@@ -28,14 +28,14 @@ const AdditionalInfosMobilePortraitViewContainer = ({ additionalInfo }) => (
         </span>
       </p>
       <p className='additional-info-mobile-portrait__description' style={alignPrgpheToLeft}>
-        <PhoneAndroidIcon titleAccess='Phone N°'/>
+        <PhoneAndroidIcon titleAccess='Phone Number'/>
         <span style={positionHalfTxtAbsolute}>Phone</span>
         <span style={alignHalfTxtToRight}>
           {additionalInfo.voiceVideoContact.phoneNumber}
         </span>       
       </p>
       <p className='additional-info-mobile-portrait__description' style={alignPrgpheToLeft}>
-        <WhatsAppIcon titleAccess='WhatsApp N°'/>
+        <WhatsAppIcon titleAccess='WhatsApp Number'/>
         <span style={positionHalfTxtAbsolute}>WhatsApp</span>
         <span style={alignHalfTxtToRight}>
           {additionalInfo.voiceVideoContact.phoneNumber}
@@ -91,14 +91,14 @@ const AdditionalInfosMobilePortraitViewContainer = ({ additionalInfo }) => (
       </p>
       <p className='additional-info-mobile-portrait__description' style={alignPrgpheToLeft}>
         <FavoriteIcon titleAccess='Marital State'/>
-        <span style={positionHalfTxtAbsolute}>State</span>
+        <span style={positionHalfTxtAbsolute}>Marital State</span>
         <span style={alignHalfTxtToRight}>
           {additionalInfo.state}
         </span>
       </p>
       <p className='additional-info-mobile-portrait__description' style={alignPrgpheToLeft}>
         <DriveEtaIcon titleAccess="Driver's License"/>
-        <span style={positionHalfTxtAbsolute}>License</span>
+        <span style={positionHalfTxtAbsolute}>Driver&apos;s License</span>
         <span style={alignHalfTxtToRight}>
           {additionalInfo.driverLicense}
         </span>

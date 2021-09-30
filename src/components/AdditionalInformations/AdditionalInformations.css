@@ -6,7 +6,7 @@
     grid-gap: 2em;
 }
 
-/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
+/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px' */
 @media screen and (max-width: 1024px) and (orientation : portrait) {
     .additional-infos__grid {
         display: none;

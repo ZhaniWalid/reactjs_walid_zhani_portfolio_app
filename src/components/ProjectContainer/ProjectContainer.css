@@ -35,6 +35,6 @@
 /* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
 @media screen and (max-width: 1024px) and (orientation : landscape) {
   .project {
-    width: 75%; /* */
+    width: 75%;
   }
 }
