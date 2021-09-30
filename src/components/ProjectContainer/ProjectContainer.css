@@ -31,3 +31,10 @@
 .project .link--icon {
   margin-left: 0.5em;
 }
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
+  .project {
+    width: 75%; /* */
+  }
+}

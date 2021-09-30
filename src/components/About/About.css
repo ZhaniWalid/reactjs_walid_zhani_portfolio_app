@@ -30,11 +30,25 @@
 }
 
 /* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (orientation : portrait) {
   .app .about {
     align-items: flex-start;
     margin-top: 2em;
     width: 95%;
     margin-left: 10px;
+  }
+}
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
+  .app .about {
+    align-items: flex-start;
+    margin-top: 2em;
+    width: 95%;
+    margin-left: 10px;
+  }
+  .about__desc,
+  .about__contact {
+    align-self: center;
   }
 }

@@ -51,7 +51,7 @@ button {
   cursor: pointer;
 }
 
-/* To Configure the Components on 'Mobile Portrait View' with 'max-width: 900px' */
+/* To Configure the Components on 'Mobile Portrait/Landscape View' with 'max-width: 900px' */
 @media screen and (max-width: 900px) {
   h1 {
     font-size: 2.6rem;

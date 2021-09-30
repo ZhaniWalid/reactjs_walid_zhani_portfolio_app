@@ -7,7 +7,15 @@
 }
 
 /* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (orientation : portrait) {
+  .projects__grid {
+    width: 100%; /* 95%; */
+    margin: 15px;
+  }
+}
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
   .projects__grid {
     width: 100%; /* 95%; */
     margin: 15px;

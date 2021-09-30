@@ -19,7 +19,17 @@
 }
 
 /* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (orientation : portrait) {
+  .languages__list {
+    padding-right: inherit;
+  }
+  .languages__list-item {
+    width: 100%;
+  }
+}
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
   .languages__list {
     padding-right: inherit;
   }

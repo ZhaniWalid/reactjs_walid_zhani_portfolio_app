@@ -19,7 +19,11 @@ const useStyles = makeStyles((theme) =>
   createStyles({
     root: {
         width: '100%',
-        maxWidth: '36ch'
+        maxWidth: '36ch',
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
+            maxWidth: 'fit-content'
+        }
         /* backgroundColor: theme.palette.background.paper */
     },
     nested: {
@@ -47,7 +51,12 @@ const useStyles = makeStyles((theme) =>
             transform: 'translateY(-7px)'
         },
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            height: '50px',
+            width: '50px'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             height: '50px',
             width: '50px'
         }
@@ -62,7 +71,11 @@ const useStyles = makeStyles((theme) =>
             transform: 'translateY(-7px)'
         } */
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            marginLeft: '0px'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             marginLeft: '0px'
         }
     },
@@ -72,7 +85,12 @@ const useStyles = makeStyles((theme) =>
         fontWeight: '550',
         color: 'var(--clr-fg-alt)',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            width: 'auto', // '335px'
+            fontSize: '0.925rem'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             width: 'auto', // '335px'
             fontSize: '0.925rem'
         }
@@ -82,7 +100,12 @@ const useStyles = makeStyles((theme) =>
         fontSize: '0.85rem',
         color: 'var(--clr-fg)',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            width: 'auto',
+            fontSize: '0.750rem'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             width: 'auto',
             fontSize: '0.750rem'
         }
@@ -94,7 +117,11 @@ const useStyles = makeStyles((theme) =>
         fontSize: '0.8rem',
         fontStyle: 'italic',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            fontSize: '0.7rem'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             fontSize: '0.7rem'
         }
     },
@@ -104,8 +131,14 @@ const useStyles = makeStyles((theme) =>
         top: '15%', 
         right: '-205%',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px'
-        '@media screen and (max-width: 600px)': {
-            right: '2.5%', // '0%',
+        '@media screen and (max-width: 1024px) and (orientation : portrait)': {
+            right: '0%', // '2.5%',
+            top: '30px'
+            // marginRight: '-0.2em'
+        },
+        // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
+        '@media screen and (max-width: 1024px) and (orientation : landscape)': {
+            right: '0%', // '2.5%',
             top: '30px'
             // marginRight: '-0.2em'
         }

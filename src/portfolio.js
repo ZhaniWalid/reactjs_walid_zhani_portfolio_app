@@ -24,8 +24,9 @@ let descPargraphe1 = 'I am a full-stack software developer engineer (Web/Mobile)
 descPargraphe1 += 'from Tunisia ';
 /*  descPargraphe += <img src={TunisianFlag} width='24px' height='24px' alt='' />; */
 let descPargraphe2 = ', I have a two years and half (2.5 years) of professional experience. ';
-descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript (ReactJS, ExtJS), ';
-descPargraphe2 += 'JSP, Android, Ionic, SQL, NoSql (Firebase).'; 
+descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript/TypeScript (ReactJS, ExtJS), ';
+descPargraphe2 += 'Python/Django, C#/Asp.Net, JSP, Android, Ionic, Unity, Git, RESTful Web API(s), '; 
+descPargraphe2 += 'SQL, NoSql (Firebase).'; 
 
 const about = {
   // all the properties are optional - can be left empty or deleted

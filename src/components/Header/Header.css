@@ -14,7 +14,21 @@
 }
 
 /* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (orientation : portrait) {
+  .header {
+    height: 6em;
+    width: 87.5%;
+  }
+  .profile-image {
+    height: 50px;
+    width: 50px;
+    margin-top: auto;
+    margin-left: -5px;
+  }
+}
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
   .header {
     height: 6em;
     width: 87.5%;

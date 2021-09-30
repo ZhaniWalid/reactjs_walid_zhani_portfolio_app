@@ -146,7 +146,15 @@ main {
 }
 
 /* To Configure the Components on 'Mobile Portrait View' with 'max-width: 600px' */ 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) and (orientation : portrait) {
+  .section {
+    margin-top: 4em;
+    width: 95%;
+  }
+}
+
+/* To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px' */
+@media screen and (max-width: 1024px) and (orientation : landscape) {
   .section {
     margin-top: 4em;
     width: 95%;
