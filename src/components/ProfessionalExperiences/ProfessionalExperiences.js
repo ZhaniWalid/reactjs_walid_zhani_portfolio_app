@@ -179,6 +179,7 @@ const ProfessionalExperiences = () => {
                                 variant='rounded'
                                 alt='© Walid ZHANI'
                                 src={proExp.companyLogo}
+                                title={proExp.companyName}
                             />
                         </ListItemAvatar>
                         <ListItemText

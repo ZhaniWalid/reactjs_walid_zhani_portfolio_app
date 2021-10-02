@@ -155,6 +155,7 @@ const OnlineCertifications = () => {
                                 variant='rounded'
                                 alt='© Walid ZHANI'
                                 src={onlineCertif.logoCourseProvider}
+                                title={onlineCertif.issuedBy}
                             />
                         </ListItemAvatar>
                         <ListItemText

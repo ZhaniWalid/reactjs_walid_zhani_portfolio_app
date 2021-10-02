@@ -21,7 +21,7 @@ const AdditionalInformationsContainer = ({ additionalInfo }) => (
       // marginLeft: was '-300px' and because I changed the Link Nav Titles to 'UPPERCASE'
       // In the file [./App.css] on '.link--nav => text-transform: 'uppercase'
       // So I changed it to '-250px' to be more fixed and not adjacent with left corner of the page
-      style={{ marginTop: '700px', marginLeft: '-250px', borderRadius: '100px', width: '105%' }}
+      style={{ marginTop: '700px', borderRadius: '100px', width: '105%' }}
     >
       <h3>{additionalInfo.fullName}</h3>
       <h6>({additionalInfo.email})</h6>
