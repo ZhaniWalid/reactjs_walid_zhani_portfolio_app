@@ -34,7 +34,7 @@
 }
 
 /* Exceptions For Large Mobile Screens using '1280px & 1340px' Landscape Mode
-To Configure the Components on 'Mobile Landscape View' with min-width: 1280px & 'max-width: 1340px'
+To Configure the Components on 'Mobile Landscape View' with 'min-width: 1280px' & 'max-width: 1340px'
 ==> Specific for the Device 'Nexus 10' on 'Landscape Mode' when Developing using Microsoft Edge */
 @media screen and (min-width: 1280px) and (max-width: 1340px) and (orientation : landscape) {
     .additional-info {

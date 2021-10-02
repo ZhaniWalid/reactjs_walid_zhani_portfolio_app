@@ -16,8 +16,8 @@
     }
 }
 
-/* Exceptions For Large Mobile Screens using '768px & 1024' Portrait Mode
-To Configure the Components on 'Mobile Portrait View' with min-width: 768px & 'max-width: 1024px' */
+/* Exceptions For Large Mobile Screens using '768px & 1024px' Portrait Mode
+To Configure the Components on 'Mobile Portrait View' with 'min-width: 768px' & 'max-width: 1024px' */
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait) {
     .additional-infos-mobile-portrait__grid {
         display: grid;

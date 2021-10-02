@@ -28,8 +28,8 @@ const useStyles = makeStyles((theme) =>
         '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             maxWidth: 'fit-content'
         },
-        // Exceptions For Large Mobile Screens using '768px & 1024' Portrait Mode
-        // To Configure the Components on 'Mobile Portrait View' with min-width: 768px & 'max-width: 1024px'
+        // Exceptions For Large Mobile Screens using '768px & 1024px' Portrait Mode
+        // To Configure the Components on 'Mobile Portrait View' with 'min-width: 768px' & 'max-width: 1024px'
         '@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)': {
             maxWidth: 'fit-content'
         }
@@ -41,13 +41,6 @@ const useStyles = makeStyles((theme) =>
     inline: {
         display: 'inline'
     },
-    /* listItem: {
-        boxShadow: theme.shadows[10],
-        transition: 'transform 0.2s linear',
-        '&:hover': {
-            transform: 'translateY(-7px)'
-        }
-    }, */
     avatar: {
         // Same as this inline style: style={{ height: '100px', width: '100px', boxShadow: 'var(--shadow)'... }}
         // but instead we call it ('avatar') in the 'className' prop below
@@ -74,11 +67,6 @@ const useStyles = makeStyles((theme) =>
         // Same as this inline style: style={{ marginLeft: '10px' }}
         // but instead we call it ('listItemText') in the 'className' prop below
         marginLeft: '10px',
-        /* boxShadow: theme.shadows[10],
-        transition: 'transform 0.2s linear',
-        '&:hover': {
-            transform: 'translateY(-7px)'
-        } */
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
             marginLeft: '0px'
@@ -141,13 +129,13 @@ const useStyles = makeStyles((theme) =>
         right: '-205%',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
-            right: '0%', // '2.5%',
+            right: '0%', // '2.5%'
             top: '30px'
             // marginRight: '-0.2em'
         },
         // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : landscape)': {
-            right: '0%', // '2.5%',
+            right: '0%', // '2.5%'
             top: '30px'
             // marginRight: '-0.2em'
         }

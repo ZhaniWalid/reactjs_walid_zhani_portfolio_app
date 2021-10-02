@@ -1,21 +1,16 @@
 /* eslint-disable prettier/prettier */
 import uniqid from 'uniqid';
-import { additionalInformations } from '../../portfolio';
-// import '../Projects/Projects.css';
 import AdditionalInformationsContainer from '../AdditionalInformationsContainer/AdditionalInformationsContainer';
+import { additionalInformations } from '../../portfolio';
 import './AdditionalInformations.css';
 
 const AdditionalInformations = () => {
   if (!additionalInformations) return null;
 
   return (
-    <section /* id='projects' */ className='section additional-infos'>
-      {/* <h2 className='section__title'>Projects</h2> */}
-
+    <section className='section additional-infos'>
       <div className='additional-infos__grid'>
-        {/* {additionalInformations.map((project) => ( */}
           <AdditionalInformationsContainer key={uniqid()} additionalInfo={additionalInformations} />
-        {/* ))} */}
       </div>
     </section>
   );

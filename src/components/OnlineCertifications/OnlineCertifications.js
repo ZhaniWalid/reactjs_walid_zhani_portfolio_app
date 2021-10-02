@@ -27,13 +27,13 @@ const useStyles = makeStyles((theme) =>
       // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
       '@media screen and (max-width: 1024px) and (orientation : landscape)': {
             maxWidth: 'fit-content'
-       },
-       // Exceptions For Large Mobile Screens using '768px & 1024' Portrait Mode
-       // To Configure the Components on 'Mobile Portrait View' with min-width: 768px & 'max-width: 1024px'
-       '@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)': {
+      },
+      // Exceptions For Large Mobile Screens using '768px & 1024px' Portrait Mode
+      // To Configure the Components on 'Mobile Portrait View' with 'min-width: 768px' & 'max-width: 1024px'
+      '@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation : portrait)': {
             maxWidth: 'fit-content'
-        }
-        // backgroundColor: theme.palette.background.paper 
+      }
+      // backgroundColor: theme.palette.background.paper 
     },
     inline: {
       display: 'inline'
@@ -126,13 +126,13 @@ const useStyles = makeStyles((theme) =>
         right: '-205%',
         // To Configure the Components on 'Mobile Portrait View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : portrait)': {
-            right: '0%', // '2.5%',
+            right: '0%', // '2.5%'
             top: '30px'
             // marginRight: '-0.2em'
         },
         // To Configure the Components on 'Mobile Landscape View' with 'max-width: 1024px'
         '@media screen and (max-width: 1024px) and (orientation : landscape)': {
-            right: '0%', // '2.5%',
+            right: '0%', // '2.5%'
             top: '30px'
             // marginRight: '-0.2em'
         }
@@ -170,11 +170,11 @@ const OnlineCertifications = () => {
                                         className={classes.inline}
                                         // color='secondary'
                                     >
-                                        {/* Issued By */} <span /* style={{ paddingLeft: '45px' }} */>{onlineCertif.issuedBy}</span>
+                                        <span>{onlineCertif.issuedBy}</span>
                                         <br />                   
                                     </Typography>   
                                     <span className={classes.spanIssuedOn}>
-                                        {/* Issued On */} <span /* style={{ paddingLeft: '43px' }} */>{onlineCertif.issuedOn}</span>
+                                        <span>{onlineCertif.issuedOn}</span>
                                     </span>                                
                                 </>
                             }

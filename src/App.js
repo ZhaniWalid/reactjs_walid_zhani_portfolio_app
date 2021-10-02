@@ -11,7 +11,6 @@ import Footer from './components/Footer/Footer';
 import ProfessionalExperiences from './components/ProfessionalExperiences/ProfessionalExperiences';
 import OnlineCertifications from './components/OnlineCertifications/OnlineCertifications';
 import Languages from './components/Languages/Languages';
-// import AdditionalInformations from './components/AdditionalInformations/AdditionalInformations';
 import './App.css';
 
 const App = () => {
@@ -20,7 +19,6 @@ const App = () => {
   return (
     <div id='top' className={`${themeName} app`}>
       <Header />
-      {/* <AdditionalInformations /> */}
       
       <main>
         <About />

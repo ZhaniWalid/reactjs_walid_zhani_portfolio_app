@@ -20,7 +20,6 @@ const About = () => {
       )}
 
       {role && <h2 className='about__role'>A {role}.</h2>}
-      {/* <p className='about__desc'>{description}</p> */}
       <p className='about__desc'>
         {description.descriptionPartOne}
         <img src={TunisiaFlag} width='22.5px' height='15px' alt='Tunisia Flag' title='Tunisia Flag'/>

@@ -1,5 +1,4 @@
 /* eslint-disable prettier/prettier */
-// import TunisianFlag from './images/svg_icons/tunisian_flag_icon.svg';
 import myEnglishVerCV from './files/PDF/My_Eng_CV_2021_ver_Aug2021_job.pdf';
 import udemyLogo from './images/logos/udemy_logo.png';
 import ibmLogo from './images/logos/ibm_logo.jpg';
@@ -21,18 +20,16 @@ const header = {
 };
 
 let descPargraphe1 = 'I am a full-stack software developer engineer (Web/Mobile), I am 29 years old, ';
-descPargraphe1 += 'from Tunisia ';
-/*  descPargraphe += <img src={TunisianFlag} width='24px' height='24px' alt='' />; */
+    descPargraphe1 += 'from Tunisia ';
 let descPargraphe2 = ', I have a two years and half (2.5 years) of professional experience. ';
-descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript/TypeScript (ReactJS, ExtJS), ';
-descPargraphe2 += 'Python/Django, C#/Asp.Net, JSP, Android, Ionic, Unity, Git, RESTful Web API(s), '; 
-descPargraphe2 += 'SQL, NoSql (Firebase).'; 
+    descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript/TypeScript (ReactJS, ExtJS), ';
+    descPargraphe2 += 'Python/Django, C#/Asp.Net, JSP, Android, Ionic, Unity, Git, RESTful Web API(s), '; 
+    descPargraphe2 += 'SQL, NoSql (Firebase).'; 
 
 const about = {
   // all the properties are optional - can be left empty or deleted
   name: 'Walid Zhani',
   role: 'Full Stack Engineer',
-  // description: descPargraphe,
   description: {
     descriptionPartOne: descPargraphe1,
     descriptionPartTwo: descPargraphe2
