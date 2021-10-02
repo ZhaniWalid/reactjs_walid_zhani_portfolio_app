@@ -148,14 +148,14 @@ let descRoleAdp1 = 'I worked as a Full-Stack JEE Web developer, using Java (Back
     descRoleAdp1 += 'with a team using Agile SCRUM methodology, Bitbucket for Version-Control & Jenkins for CI / CD.';
 const descRoleAdp2 = 'My role was to fix bugs / create new features, in existing Web applications.';
 // eslint-disable-next-line prefer-template
-console.log('descRoleAdp:\n ', descRoleAdp1+ '\n'+ descRoleAdp2);
+// console.log('descRoleAdp:\n ', descRoleAdp1+ '\n'+ descRoleAdp2);
 
 let descRoleMss1 = 'Development of a Mobile application on Android 4.4.2 (Front-End) for the consultation of '; 
     descRoleMss1 += 'banking transactions via TPE(s), and to follow the statistics via the Business intelligence (BI).';
 let descRoleMss2 = 'Development of an ASP.NET Web API Application (Back-End) which includes '; 
     descRoleMss2 += 'RESTful Web Services that will be consumable via the Android client.';
 // eslint-disable-next-line prefer-template
-console.log('descRoleMss:\n ', descRoleMss1+ '\n'+ descRoleMss2);
+// console.log('descRoleMss:\n ', descRoleMss1+ '\n'+ descRoleMss2);
 
 const professionalExperiences = [
   // 'professionalExperiences' can be added or removed

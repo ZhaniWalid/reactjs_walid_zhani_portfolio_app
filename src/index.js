@@ -6,11 +6,13 @@ import './index.css';
 
 // Disable all types of log(s) on 'production' Mode
 if (process.env.NODE_ENV === 'production') {
-  console.log = () => ({})
-  console.error = () => ({})
-  console.debug = () => ({})
-  console.info = () => ({})
-  console.warn = () => ({})
+  // In 'JavaScript File' like this: console.x = () => {}
+  // In 'TypeScript File' like this: console.x = () => ({})
+  console.log = () => {}
+  console.error = () => {}
+  console.debug = () => {}
+  console.info = () => {}
+  console.warn = () => {}
 }
 
 render(
