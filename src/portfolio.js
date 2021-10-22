@@ -1,5 +1,5 @@
 /* eslint-disable prettier/prettier */
-import myEnglishVerCV from './files/PDF/My_Eng_CV_2021_ver_Aug2021_job.pdf';
+import myEnglishVerCV from './files/PDF/My_Eng_CV_2021_ver_Oct2021_job.pdf';
 import udemyLogo from './images/logos/udemy_logo.png';
 import ibmLogo from './images/logos/ibm_logo.jpg';
 import adpLogo from './images/logos/adp_logo.png';
