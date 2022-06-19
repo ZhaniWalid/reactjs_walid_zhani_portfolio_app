@@ -1,10 +1,12 @@
 /* eslint-disable prettier/prettier */
-import myEnglishVerCV from './files/PDF/My_Eng_CV_2021_ver_Oct2021_job.pdf';
+import myCVEnglishVer from './files/PDF/My_Eng_CV_2022_ver_Apr2022_job.pdf';
 import udemyLogo from './images/logos/udemy_logo.png';
 import ibmLogo from './images/logos/ibm_logo.jpg';
 import adpLogo from './images/logos/adp_logo.png';
 import deuseSprlLogo from './images/logos/deuse_sprl_logo.png';
 import mssLogo from './images/logos/mss_logo.jpg';
+import gttTunisiaLogo from './images/logos/gtt_tn_logo.jpg';
+
 // This flag 'SVG Icons' was all Downloaded on this dimension '512*512 pixel'
 // From: https://iconarchive.com
 // Exmple Spain Flag: https://iconarchive.com/show/flags-icons-by-wikipedia/ES-Spain-Flag-icon.html
@@ -22,9 +24,9 @@ const header = {
 let descPargraphe1 = 'I am a full-stack software developer engineer (Web/Mobile), I am 29 years old, ';
     descPargraphe1 += 'from Tunisia ';
 let descPargraphe2 = ', I have a two years and half (2.5 years) of professional experience. ';
-    descPargraphe2 += 'I use several technologies like Java/JEE, JavaScript/TypeScript (ReactJS, ExtJS), ';
-    descPargraphe2 += 'Python/Django, C#/Asp.Net, JSP, Android, Ionic, Unity, Git, RESTful Web API(s), '; 
-    descPargraphe2 += 'SQL, NoSql (Firebase).'; 
+    descPargraphe2 += 'I use several technologies like Java/JEE, Python/Django, ';
+    descPargraphe2 += 'Spring/Hibernate/Struts 2, JavaScript/TypeScript (ReactJS, ExtJS), C#/Asp.Net, '; 
+    descPargraphe2 += 'JSP, Android, Ionic, Unity, Git, RESTful Web API(s), SQL, NoSql (Firebase).'; 
 
 const about = {
   // all the properties are optional - can be left empty or deleted
@@ -34,7 +36,7 @@ const about = {
     descriptionPartOne: descPargraphe1,
     descriptionPartTwo: descPargraphe2
   },
-  resume: myEnglishVerCV,
+  resume: myCVEnglishVer,
   social: {
     linkedin: 'https://www.linkedin.com/in/walid-zhani-54705612a/',
     github: 'https://github.com/ZhaniWalid',
@@ -85,6 +87,22 @@ const projects = [
     stack: ['JavaScript', 'CSS', 'HTML', 'React', 'Ionic'],
     sourceCode: 'https://github.com/ZhaniWalid/react_ionic5_biorhythm_calculator_app_udemy',
     livePreview: 'https://biorhythms-react-ionic.netlify.app/'
+  },
+  {
+    name: 'Spring Boot REST API Crud App',
+    description:
+      'A sample " SPRING BOOT CRUD REST API " app, using Java #8 and Spring Boot framework.',
+    stack: ['Java', 'Spring Boot', 'RESTful API', 'Postman'],
+    sourceCode: 'https://github.com/ZhaniWalid/spring_boot_rest_api_crud_app_job_canada',
+    livePreview: 'https://github.com/ZhaniWalid/spring_boot_rest_api_crud_app_job_canada'
+  },
+  {
+    name: 'Walid Zhani Portfolio',
+    description:
+      'My portfolio (Walid Zhani) ReactJS Web App with Responsive Design, using React #17.',
+    stack: ['JavaScript', 'CSS', 'HTML', 'React'],
+    sourceCode: 'https://github.com/ZhaniWalid/reactjs_walid_zhani_portfolio_app',
+    livePreview: 'https://walid-zhani-portfolio.netlify.app/'
   }
 ];
 
@@ -93,6 +111,7 @@ const skills = [
   // if there are no skills, 'Skills section' won't show up
   'HTML',
   'CSS',
+  'Ajax | JQuery',
   'JavaScript | TypeScript',
   'ReactJS | ExtJS',
   'Ionic 5',
@@ -107,7 +126,8 @@ const skills = [
   'NoSql (Firebase)',
   'SQL Server Data Tools | Power BI',
   'Microsoft Office Tools',
-  'WSDL | SOAP | REST'
+  'WSDL | SOAP | REST',
+  'Spring | Hibernate | Struts 2'
 ];
 
 const languages = [
@@ -143,7 +163,6 @@ const languages = [
   }
 ];
 
-
 let descRoleAdp1 = 'I worked as a Full-Stack JEE Web developer, using Java (Back-End) / ExtJS + JSP (Front-End) ';
     descRoleAdp1 += 'with a team using Agile SCRUM methodology, Bitbucket for Version-Control & Jenkins for CI / CD.';
 const descRoleAdp2 = 'My role was to fix bugs / create new features, in existing Web applications.';
@@ -157,9 +176,27 @@ let descRoleMss2 = 'Development of an ASP.NET Web API Application (Back-End) whi
 // eslint-disable-next-line prefer-template
 // console.log('descRoleMss:\n ', descRoleMss1+ '\n'+ descRoleMss2);
 
+let descRoleGttTn1 = 'I work as a JEE Full-Stack Web Developer, using Java (Back-End) / JSP (Front-End) ';
+    descRoleGttTn1 += 'with technologies such as: JavaScript / Ajax / JQuery & Spring / Hibernate / Struts 2.';
+const descRoleGttTn2 = 'My role is to fix bugs / create new features, in existing Web applications.';    
+
 const professionalExperiences = [
   // 'professionalExperiences' can be added or removed
   // if there are no professionalExperiences, 'Professional Experiences' section won't show up
+  {
+    period: '01/03/2022 - Currently',
+    companyName: 'GTT Tunisia',
+    companyLogo: gttTunisiaLogo,
+    linkToLinkedInCompany: '#',
+    role: {
+      mainRole: 'Developer Engineer',
+      detailedRole: 'Web Developer: Java (JEE) / JSP'
+    },
+    description: {
+      descriptionPartOne: descRoleGttTn1,
+      descriptionPartTwo: descRoleGttTn2
+    }
+  },
   {
     period: '01/04/2019 - 31/12/2020',
     companyName: 'ADP (Automatic Data Processing)',
